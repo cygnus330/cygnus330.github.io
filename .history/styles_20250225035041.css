@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+button.copy-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 2px 8px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: normal;
+    height: auto;
+}
+
+button.copy-btn:hover {
+    background-color: #45a049;
+}
+
+button.copy-btn:active {
+    background-color: #3e8e41;
+}
+
+button.copy-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* button */
+td:nth-child(1), td:nth-child(2) {
+    width: 1%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+td:nth-child(1) button.copy-btn,
+td:nth-child(2) button.copy-btn {
+    padding: 2px 8px;
+    font-size: 14px;
+}

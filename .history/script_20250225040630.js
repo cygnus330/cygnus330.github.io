@@ -21,7 +21,7 @@ fetch('data.json')
                 <td></td>
                 <td>${i.code}</td>
                 <td>${i.bunban}</td>
-                <td>${i.sub}</td>
+                <td?${i.lname}</td>
             `;
             row.cells[0].appendChild(courseCodeBtn);
 

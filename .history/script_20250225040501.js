@@ -3,7 +3,7 @@ fetch('data.json')
     .then(courses => {
         const tableBody = document.getElementById('course');
         
-        courses.forEach(i => {
+        courses.forEach(course => {
             let courseCodeGroup = null;
 
             const row = document.createElement('tr');
@@ -13,15 +13,15 @@ fetch('data.json')
             courseCodeBtn.classList.add('copy-btn');
             courseCodeBtn.innerText = '복사 ❌';
             courseCodeBtn.addEventListener('click', function() {
-                copyToClipboard(i.code, this);
+                copyToClipboard(course.courseCode, this);
             });
             
             // 찌끄레기
             row.innerHTML = `
                 <td></td>
-                <td>${i.code}</td>
-                <td>${i.bunban}</td>
-                <td>${i.sub}</td>
+                <td>${course.code}</td>
+                <td>${course.bunban}</td>
+                <td?${course.lname}</td>
             `;
             row.cells[0].appendChild(courseCodeBtn);
 

@@ -1,0 +1,18 @@
+[
+    {
+        "courseCode": "GS1111",
+        "courseName": "일반물리학 실험 I",
+        "subCourses": ["06"]
+    },
+    {
+        "courseCode": "CS102",
+        "courseName": "알고리즘",
+        "professor": "이교수",
+        "subCourses": [
+            {
+                "section": "A",
+                "students": 20
+            }
+        ]
+    }
+]

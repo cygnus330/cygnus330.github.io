@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+button.copy-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 15px; /* 버튼 크기 설정 */
+    font-size: 14px; /* 글자 크기 설정 */
+    cursor: pointer;
+    width: 100%; /* 버튼이 셀을 가득 채우도록 */
+    box-sizing: border-box; /* 패딩을 포함한 크기 조정 */
+}
+
+button.copy-btn:hover {
+    background-color: #45a049;
+}
+
+button.copy-btn:active {
+    background-color: #3e8e41;
+}
+
+button.copy-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* 강의번호가 같은 행들에 대해 테두리 제거 */
+.no-border {
+    border: none;
+}
+
+/* 1, 2열의 크기 조정 */
+td:nth-child(1), td:nth-child(2) {
+    width: 120px; /* 버튼 크기에 맞게 1, 2열 너비 조정 */
+}
+
+td:nth-child(1) button.copy-btn,
+td:nth-child(2) button.copy-btn {
+    padding: 8px 0; /* 버튼의 패딩을 1, 2열에 맞게 조정 */
+    font-size: 12px; /* 버튼 글자 크기를 작게 조정 */
+}

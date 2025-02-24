@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px 10px;  /* 셀의 패딩을 줄여서 크기 조정 */
+    text-align: left;
+    border: 1px solid #ddd;
+    vertical-align: middle;  /* 버튼이 셀 안에서 중앙에 오도록 설정 */
+}
+
+button.copy-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 2px 8px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: normal;
+    height: auto;
+}
+
+button.copy-btn:hover {
+    background-color: #45a049;
+}
+
+button.copy-btn:active {
+    background-color: #3e8e41;
+}
+
+button.copy-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* button */
+td:nth-child(1), td:nth-child(2) {
+    width: 1%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+td:nth-child(1) button.copy-btn,
+td:nth-child(2) button.copy-btn {
+    padding: 2px 8px;
+    font-size: 14px;
+}

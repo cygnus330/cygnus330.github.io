@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+button.copy-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.copy-btn:hover {
+    background-color: #45a049;
+}
+
+button.copy-btn:active {
+    background-color: #3e8e41;
+}
+
+button.copy-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* 강의번호가 같은 행들에 대해 테두리 제거 */
+.no-border {
+    border: none;
+}
