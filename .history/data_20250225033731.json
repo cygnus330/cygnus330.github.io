@@ -1,0 +1,31 @@
+[
+    {
+        "courseCode": "CS101",
+        "courseName": "웹 프로그래밍",
+        "professor": "김교수",
+        "subCourses": [
+            {
+                "section": "A",
+                "email": "email1@example.com",
+                "students": 30
+            },
+            {
+                "section": "B",
+                "email": "email2@example.com",
+                "students": 25
+            }
+        ]
+    },
+    {
+        "courseCode": "CS102",
+        "courseName": "알고리즘",
+        "professor": "이교수",
+        "subCourses": [
+            {
+                "section": "A",
+                "email": "email3@example.com",
+                "students": 20
+            }
+        ]
+    }
+]

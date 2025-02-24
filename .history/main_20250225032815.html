@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>강의 목록</title>
+        <style>
+            #content {
+                margin-top: 20px;
+            }
+        </style>
+        <script>
+            function loadLecture(lectureFile) {
+                fetch(`data/${lectureFile}.html`)
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('content').innerHTML = data;
+                    })
+                    .catch(error => {
+                        console.error("파일을 불러오는 데 실패했습니다.", error);
+                    });
+            }
+        </script>
+    </head>
+    <body>
+        <h1>강의 목록</h1>
+        <button onclick="loadLecture('GS1111')">GS1111 불러오기</button>
+
+        <div id="content">
+            <p>강의 내용을 불러오려면 위 버튼을 클릭하세요.</p>
+        </div>
+    </body>
+</html>

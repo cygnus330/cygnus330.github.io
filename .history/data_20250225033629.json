@@ -1,0 +1,18 @@
+[
+    {
+        "courseCode": "CS101",
+        "section": "A",
+        "professor": "김교수",
+        "courseName": "웹 프로그래밍",
+        "students": 30,
+        "email": "email1@example.com"
+    },
+    {
+        "courseCode": "CS102",
+        "section": "B",
+        "professor": "이교수",
+        "courseName": "알고리즘",
+        "students": 25,
+        "email": "email2@example.com"
+    }
+]
